@@ -1,5 +1,6 @@
 # ESILs
-This github repository is associated with the Nature Communications manuscript entitled "The effect of DNA polymorphisms and natural variation on crossover hotspot activity in Arabidopsis hybrids" by Szymanska-Lejman et al., 2023 https://www.nature.com/articles/s41467-022-35722-3 
+This github repository is associated with the Nature Communications manuscript entitled "The effect of DNA polymorphisms and natural variation on crossover hotspot activity in Arabidopsis hybrids" by Szymanska-Lejman et al., 2023 https://www.nature.com/articles/s41467-022-35722-3.
+
 The bash script is used for alignement of fastq files and preparing the list of Single Nucleotide Polymorphisms (SNPs) in a short genetic interval
 for a studied Arabidopsis cross. This is applied to sequenced libraries, coming from a long-range PCR, however it might be used for whole-genome-sequencing data with some modifications. Firstly, the paired-end reads are pooled and aligned to a reference sequence. Resulting bam file is sorted and indexed. Later samtools mpileup and bcftools are used to prepare a .txt extension list of all the SNPs found in a studied DNA sequence. Similarly, individual paired-end fastq files are aligned to the reference sequence and later a list of SNPs with number of reads per each SNP is produced.
 The R script is used to filter out the SNPs found in the individuals, assign a genotype and visualize the data.
